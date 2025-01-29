@@ -1,8 +1,13 @@
 let btnAgregar = document.getElementById("BtnAgregar");
 let btnOcultar = document.getElementById("volverTabla")
 let formAgregar = document.getElementById("formAgregar");
+let btnBtnAñadir = document.getElementById("BtnAñadir");
 let tabla = document.getElementById("tabla");
 
+
+btnBtnAñadir.addEventListener("click", ()=>{
+    agregarUsuario()
+})
 
 
 
@@ -21,3 +26,4 @@ btnOcultar.addEventListener("click", ()=>{
 
     tabla.style.display = "block";
 })
+
