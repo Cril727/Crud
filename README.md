@@ -1,12 +1,11 @@
 # 🚀 Sistema de Gestión de Usuarios CRUD
 
-![Banner del Proyecto](https://via.placeholder.com/1200x300.png?text=Sistema+de+Gesti%C3%B3n+de+Usuarios+CRUD)
+🔗 [Ver Demo en Vivo](https://crud-ochre-eight.vercel.app/)
 
 ## 📋 Descripción
 
 Este proyecto es un Sistema de Gestión de Usuarios CRUD (Create, Read, Update, Delete) desarrollado con HTML, CSS (Bootstrap), JavaScript y Supabase como backend. Permite a los usuarios realizar operaciones básicas de gestión de datos de manera eficiente y con una interfaz amigable.
 
-🔗 [Ver Demo en Vivo](https://crud-ochre-eight.vercel.app/)
 
 ## ✨ Características
 
