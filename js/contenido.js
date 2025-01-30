@@ -1,8 +1,8 @@
 let btnAgregar = document.getElementById("BtnAgregar");
 let btnOcultar = document.getElementById("volverTabla")
-let formAgregar = document.getElementById("formAgregar");
+let volverTablaDesdeEditar = document.getElementById("volverTablaDesdeEditar")
 let btnBtnAñadir = document.getElementById("BtnAñadir");
-let tabla = document.getElementById("tabla");
+
 
 
 btnBtnAñadir.addEventListener("click", ()=>{
@@ -13,17 +13,34 @@ btnBtnAñadir.addEventListener("click", ()=>{
 
 btnAgregar.addEventListener("click", () => {
 
-    tabla.style.display = "none";
+    $("#tabla").hide();
+    $("#formAgregar").show();
 
-    formAgregar.style.display = "block";
 });
 
 
 
 
 btnOcultar.addEventListener("click", ()=>{
-    formAgregar.style.display = "none";
 
-    tabla.style.display = "block";
+    $("#formAgregar").hide();
+    $("#tabla").show();
+
 })
 
+
+
+volverTablaDesdeEditar.addEventListener("click", ()=>{
+
+    $("#formEditar").hide();
+    $("#tabla").show();
+})
+
+
+
+
+$("#formEditarUsuario").on("submit", function (event) {
+    event.preventDefault()
+    const userId = $(this).data("userId")
+    editarUsuario(userId)
+  })
